@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Marco Del Pin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">Marco Del Pin</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="portfolio.html" class="active">Portfolio</a>
+                <a href="cv.html">CV</a>
+                <a href="projects.html">Open Source</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero" style="padding: 3rem 2rem;">
+        <h1>Professional Portfolio</h1>
+        <p class="tagline">25+ industrial projects across vision, robotics, automation, and cloud computing</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Vision Frameworks (2006 &ndash; present)</h2>
+            <div class="card" style="margin-bottom:1.5rem;">
+                <h3>EYEVision / OVision / MVision</h3>
+                <p>Cross-platform vision frameworks for rapid development of custom vision systems, agnostic to vision libraries. Used across all industrial vision projects below.</p>
+                <div class="tags">
+                    <span>C#</span><span>MIL</span><span>OpenCV</span><span>Accord.NET</span><span>Pylon</span><span>Sapera</span><span>Halcon</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Quality Control & Measurement</h2>
+            <table>
+                <thead><tr><th>Period</th><th>Client</th><th>Project</th><th>Tech</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td>2018&ndash;2021</td><td>Opto3i</td>
+                        <td>Furniture panel measurement on high-speed line (100 m/s). 0.2mm accuracy. 5 cameras, auto-CAD parametrization. Front/back defect detection.</td>
+                        <td>C#, MIL, MVision, 4K linear, 12MP CameraLink</td>
+                    </tr>
+                    <tr>
+                        <td>2013&ndash;2014</td><td>Eidon Lab</td>
+                        <td>Panel hole/dimension measurement. 60 seconds vs 3 hours with probes. 8 cameras + laser for 3D reconstruction.</td>
+                        <td>C#, MIL, EyeVision, Schneider PLC</td>
+                    </tr>
+                    <tr>
+                        <td>2010&ndash;2015</td><td>Eidon Lab</td>
+                        <td>Stone material inspection. Maximum marketable rectangle identification, HDR color, defect exclusion for nesting.</td>
+                        <td>C#, MIL, EyeVision, GigE color linear</td>
+                    </tr>
+                    <tr>
+                        <td>2003&ndash;2004</td><td>Eidon S.p.A.</td>
+                        <td>Brake disc 3D surface control. Flatness anomalies &gt;3 microns on 100% production. Laser sensor dense sampling.</td>
+                        <td>C++, Siemens PLC, laser sensors</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Robot Guidance Systems</h2>
+            <table>
+                <thead><tr><th>Period</th><th>Client</th><th>Project</th><th>Tech</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td>2017</td><td>Oasi.S</td>
+                        <td>Sausage canning automation. 6 ABB delta robots at 500 pcs/min. Reverse-engineered Siemens PLC communication. Dual Xeon 32-core server.</td>
+                        <td>C#, MIL, OVision, CameraLink linear</td>
+                    </tr>
+                    <tr>
+                        <td>2016</td><td>Oasi.S</td>
+                        <td>Pharmaceutical bag handling. 3D TOF reconstruction, Fanuc robot coordination, automatic camera-robot calibration. 5 TOF cameras.</td>
+                        <td>C#, MIL, OVision, TOF 3D (1mm res)</td>
+                    </tr>
+                    <tr>
+                        <td>2015</td><td>Oasi.S</td>
+                        <td>Pharmaceutical depalletizing. 3D box reconstruction on pallet, gripping coordinates to Fanuc robot.</td>
+                        <td>OVision, TOF 3D camera</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Specialized Vision</h2>
+            <table>
+                <thead><tr><th>Period</th><th>Client</th><th>Project</th><th>Tech</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td>2018</td><td>Ethics/Opto3i</td>
+                        <td>Fabric point identification for nesting and cutting of textiles.</td>
+                        <td>C#, MIL, OVision, GigE color linear</td>
+                    </tr>
+                    <tr>
+                        <td>2017</td><td>Opto3i</td>
+                        <td>Steel anti-stranding system. Real-time deformation detection for long products, preventing line downtime.</td>
+                        <td>C++, OpenCV, GigE matrix</td>
+                    </tr>
+                    <tr>
+                        <td>2007</td><td>Eidon S.p.A.</td>
+                        <td>Marine conditions detection for helicopter use. Embedded Linux system.</td>
+                        <td>C++ (Borland Kylix), Linux embedded</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Cloud & Distributed Computing</h2>
+            <div class="card" style="margin-bottom:1.5rem;">
+                <h3>Cloud Distributed Computing Framework (2008&ndash;2015, Eidon Lab)</h3>
+                <p>Supervisor system to create, destroy, configure, power on and control virtual machines across AWS, Aruba, IBM, and Microsoft Azure simultaneously. At peak: 150 machines with 32 cores each, handling 10,000 processing tasks.</p>
+                <div class="tags">
+                    <span>C#</span><span>ZeroMQ</span><span>AWS</span><span>Azure</span><span>IBM Cloud</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Industrial Automation & Data Systems</h2>
+            <table>
+                <thead><tr><th>Period</th><th>Client</th><th>Project</th><th>Tech</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td>2007&ndash;2008</td><td>BitLam</td>
+                        <td>Custom finite capacity scheduler for production optimization.</td>
+                        <td>C#, MS SQL</td>
+                    </tr>
+                    <tr>
+                        <td>2005&ndash;2007</td><td>Eidon S.p.A.</td>
+                        <td>IDE for industrial refrigeration firmware. SCADA-style visual development, cross-compilation, flash, debug.</td>
+                        <td>C++, Linux, MESH/SOAP</td>
+                    </tr>
+                    <tr>
+                        <td>2002</td><td>Eidon S.p.A.</td>
+                        <td>Vehicle fleet GPS/GPRS real-time tracking. 10M records, 300 transactions/sec.</td>
+                        <td>C++, SQL Anywhere</td>
+                    </tr>
+                    <tr>
+                        <td>1999&ndash;2007</td><td>Eidon S.p.A.</td>
+                        <td>Data collection terminals on PC104 embedded hardware. RTKernel real-time, custom TCP/IP protocol.</td>
+                        <td>C, RTKernel, SQL</td>
+                    </tr>
+                    <tr>
+                        <td>1995&ndash;1999</td><td>BitLam</td>
+                        <td>fullWORK MES &mdash; BOM, warehouse, scheduling, nesting, reporting. Still marketed today.</td>
+                        <td>C++, SQL</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Medical & Personal</h2>
+            <table>
+                <thead><tr><th>Period</th><th>Client</th><th>Project</th><th>Tech</th></tr></thead>
+                <tbody>
+                    <tr>
+                        <td>2007&ndash;present</td><td>T.F.R. Technology</td>
+                        <td>Electromyograph control software. USB/Bluetooth communication, signal processing, charts and reporting.</td>
+                        <td>C#, Git</td>
+                    </tr>
+                    <tr>
+                        <td>2005&ndash;2007</td><td>Eidon S.p.A.</td>
+                        <td>Cardiac transplant data collection for Udine Hospital (national statistics).</td>
+                        <td>ASP.NET, Oracle</td>
+                    </tr>
+                    <tr>
+                        <td>2012&ndash;present</td><td>Personal</td>
+                        <td>Cross-platform mobile app with 1M+ users on Android, iOS, Windows Phone.</td>
+                        <td>C#, Xamarin</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>Marco Del Pin &mdash; San Giorgio di Nogaro (UD), Italy</p>
+        <p>
+            <a href="mailto:marco.delpin@gmail.com">marco.delpin@gmail.com</a> &middot;
+            <a href="https://www.linkedin.com/in/marco-del-pin-7189a215">LinkedIn</a> &middot;
+            <a href="https://github.com/marcodelpin">GitHub</a>
+        </p>
+    </footer>
+</body>
+</html>
